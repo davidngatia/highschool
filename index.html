@@ -1,30 +1,32 @@
 <html>
   <head>
     <link rel="stylesheet" href="css/bootstrap.js">
-    <link href="home/david/Desktop/Quiz-board/css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/scripts.js"></script>
     <script src="js/jquery-3.3.1.js"></script>
     <title>HIGHSCHOOL</title>
   </head>
-
     <body>
-      <h1>HIGHSCHOOL</h1>
-      <p>Which among these is not a programming language?</p>
-        <select class="form-control" id="beverage">
-        <option value="1">Coffee</option>
-        <option value="2">Tea</option>
-        <option value="3">Kombucha</option>
-        <option value="4">Water</option>
-        </select>
+      <h1>QUIZ BOARD</h1>
+  <form id="quiz" name="quiz">
+  </form>
 
-        <div class="form-group">
-        <label for="born">Date of birth:</label>
-        <input id="born" class="form-control" type="date">
-        </div>
-        <div class="form-group">
-        <label for="color">What is your favorite color?</label>
-        <input id="color" class="form-control" type="color">
-        </div>
+  <p>Which of the following is a programming language?</p>
+   <input type="radio" id="mc" name="question1" value="JAVASCRIPT">JAVASCRIPT<br>
+   <input type="radio" id="mc" name="question1" value="HTML">HTML<br>
+   <input type="radio" id="mc" name="question1" value="CSS">CSS<br>
+
+
+  <P>What is the other name for Javascript</p>
+    <input type="radio" id="mc" name="question2" value="ECMAscript">ECMAscript<br>
+    <input type="radio" id="mc" name="question2" value="JS">JS<br>
+    <input type="radio" id="mc" name="question2" value="I dont know">I dont know<br>
+
+    <p>Is C++ a low level language?</p>
+    <input type="radio" id="mc" name="question3" value="Yes">Yes<br>
+    <input type="radio" id="mc" name="question3" value="No">No<br>
+
+    <input id="button" type="button" value="Submit" onclick="check();">
 
     </body>
 </html>
